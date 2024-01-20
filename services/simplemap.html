@@ -9,31 +9,31 @@
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-        #mapid {                                                                                                     <!-- setting map height as 100% -->
+        #mapid {
           height: 100%;
-        }
+        }                                                                                                            <!-- setting map height as 100% -->
 
         /* Optional: Makes the sample page fill the window. */
         html,
-        body {                                                                                                       <!-- getting id of edges and padding on entire html body -->
+        body {
           height: 100%;
           margin: 0;
           padding: 0;
-        }
+        }                                                                                                           <!-- getting id of edges and padding on entire html body -->
     </style>
     <script>
-      let mapvar;
-
-      function initMap() {                                                                                       <!-- initmap can be any name, doesn't have to be specific -->
-        mapvar = new google.maps.Map(document.getElementById("mapid"), {                                             <!-- function is not being run yet, has to wait to be called -->
-          center: { lat: -34.397, lng: 150.644 },                                                                    <!-- center and zoom are optional properties -->
+      let mapvar;                                                                                                   <!-- initmap can be any name, doesn't have to be specific -->
+                                                                                                                    <!-- function is not being run yet, has to wait to be called -->
+      function initMap() {
+        mapvar = new google.maps.Map(document.getElementById("mapid"), {
+          center: { lat: -34.397, lng: 150.644 },
           zoom: 8,
-        });
+        });                                                                                                         <!-- center and zoom are optional properties -->
       }
     </script>
   </head>
   <body>
-    <div id="mapid"></div>                                                                                           <!-- calling mapid (to set map height for the map in the body) -->
+    <div id="mapid"></div>                                                                                          <!-- calling mapid (to set map height for the map in the body) -->
     
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <!-- *** STUDENTS: Replace YOUR_API_KEY text with provided key in class for property src in next line *** -->
