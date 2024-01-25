@@ -23,11 +23,11 @@ Read the Rubric to find out about what options exist to earn more marks. Here is
 (returns map-preferred) Maps PlaceID search: https://www.google.com/maps/place/?q=place_id:ChIJFfiCrdo4Qm0RqPwuOAVtaj8
 
 Jordan's:
-Harold Longworth Public School place id point: https://www.google.com/maps/place/?q=place_id:ChIJz6BrjBUH1YkR5uZs2c-H9yQ
-Northwest Trading Company place id point: https://www.google.com/maps/place/?q=place_id:ChIJceNE2bogLk0RogA7IXc0zL4
-Chippewa Falls Rest Area place id point: https://www.google.com/maps/place/?q=place_id:ChIJP7WEyYbcN00Rf0prUS855e8
-The Golden Rail place id point: https://www.google.com/maps/place/?q=place_id:ChIJB4G79NGtXE0RaYonxrepPT8
-Red River Towers place id point: https://www.google.com/maps/place/?q=place_id:ChIJf6-kGHAhWU0R1MDdHq5pcL4
+Origin location: Harold Longworth Public School place id point: https://www.google.com/maps/place/?q=place_id:ChIJz6BrjBUH1YkR5uZs2c-H9yQ
+First Stop (store, food): Northwest Trading Company place id point: https://www.google.com/maps/place/?q=place_id:ChIJceNE2bogLk0RogA7IXc0zL4
+Second stop (sight seeing): Chippewa Falls Rest Area place id point: https://www.google.com/maps/place/?q=place_id:ChIJP7WEyYbcN00Rf0prUS855e8
+Third stop (food): The Golden Rail place id point: https://www.google.com/maps/place/?q=place_id:ChIJB4G79NGtXE0RaYonxrepPT8
+Destination location: Red River Towers: place id point: https://www.google.com/maps/place/?q=place_id:ChIJf6-kGHAhWU0R1MDdHq5pcL4
 
 ### Efficient option
 
