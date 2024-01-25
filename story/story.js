@@ -2,10 +2,13 @@ const parser = new DOMParser();
 
 async function initMap() {
   // Request needed libraries.
-  const { Map } = (await google.maps.importLibrary("maps"));
-  const { AdvancedMarkerElement, PinElement } = (await google.maps.importLibrary("marker"));
+  const { Map } = (await google.maps.importLibrary(
+    "maps",
+  )) as google.maps.MapsLibrary;
+  const { AdvancedMarkerElement, PinElement } =
+    (await google.maps.importLibrary("marker")) as google.maps.MarkerLibrary;
 
-  const map = new Map(document.getElementById("map"), {
+  const map = new Map(document.getElementById("map") as HTMLElement, {
     center: { lat: 37.419, lng: -122.02 },
     zoom: 14,
     mapId: "4504f8b37365c3d0",
@@ -72,3 +75,4 @@ async function initMap() {
 }
 
 initMap();
+export {};
