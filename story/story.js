@@ -17,7 +17,7 @@ async function initMap() {
   // Default marker with title text (no PinElement).
   const markerViewWithText = new AdvancedMarkerElement({
     map,
-    position: { lat: 37.419, lng: -122.03 },
+    position: { lat: 45.419, lng: -83.03 },
     title: "Title text for the marker at lat: 37.419, lng: -122.03",
   });
   
@@ -27,7 +27,7 @@ async function initMap() {
   });
   const markerViewScaled = new AdvancedMarkerElement({
     map,
-    position: { lat: 37.419, lng: -122.02 },
+    position: { lat: 45.419, lng: -83.02 },
     content: pinScaled.element,
   });
   
@@ -37,7 +37,7 @@ async function initMap() {
   });
   const markerViewBackground = new AdvancedMarkerElement({
     map,
-    position: { lat: 37.419, lng: -122.01 },
+    position: { lat: 45.419, lng: -83.01 },
     content: pinBackground.element,
   });
   
@@ -47,7 +47,7 @@ async function initMap() {
   });
   const markerViewBorder = new AdvancedMarkerElement({
     map,
-    position: { lat: 37.415, lng: -122.03 },
+    position: { lat: 45.415, lng: -83.03 },
     content: pinBorder.element,
   });
   
@@ -57,7 +57,7 @@ async function initMap() {
   });
   const markerViewGlyph = new AdvancedMarkerElement({
     map,
-    position: { lat: 37.415, lng: -122.02 },
+    position: { lat: 45.415, lng: -83.02 },
     content: pinGlyph.element,
   });
   
@@ -67,7 +67,7 @@ async function initMap() {
   });
   const markerViewNoGlyph = new AdvancedMarkerElement({
     map,
-    position: { lat: 37.415, lng: -122.01 },
+    position: { lat: 45.415, lng: -83.01 },
     content: pinNoGlyph.element,
   });
 }
