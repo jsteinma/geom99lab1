@@ -1,81 +1,78 @@
-function initMap(): void 
-  {
-  const map = new google.maps.Map(
-    document.getElementById("map") as HTMLElement,
-    {
-      zoom: 4,
-      center: { lat: -24.345, lng: 134.46 }, // Australia.
-    },
-  );
+const parser = new DOMParser();
 
-  const directionsService = new google.maps.DirectionsService();
-  const directionsRenderer = new google.maps.DirectionsRenderer({
-    draggable: true,
+async function initMap() {
+  // Request needed libraries.
+  const { Map } = (await google.maps.importLibrary(
+    "maps",
+  )) as google.maps.MapsLibrary;
+  const { AdvancedMarkerElement, PinElement } =
+    (await google.maps.importLibrary("marker")) as google.maps.MarkerLibrary;
+
+  const map = new Map(document.getElementById("map") as HTMLElement, {
+    center: { lat: 37.419, lng: -122.02 },
+    zoom: 14,
+    mapId: "4504f8b37365c3d0",
+  });
+
+  // Each PinElement is paired with a MarkerView to demonstrate setting each parameter.
+
+  // Default marker with title text (no PinElement).
+  const markerViewWithText = new AdvancedMarkerElement({
     map,
-    panel: document.getElementById("panel") as HTMLElement,
+    position: { lat: 37.419, lng: -122.03 },
+    title: "Title text for the marker at lat: 37.419, lng: -122.03",
   });
 
-  directionsRenderer.addListener("directions_changed", () => {
-    const directions = directionsRenderer.getDirections();
-
-    if (directions) {
-      computeTotalDistance(directions);
-    }
+  // Adjust the scale.
+  const pinScaled = new PinElement({
+    scale: 1.5,
+  });
+  const markerViewScaled = new AdvancedMarkerElement({
+    map,
+    position: { lat: 37.419, lng: -122.02 },
+    content: pinScaled.element,
   });
 
-  displayRoute(
-    "Perth, WA",
-    "Sydney, NSW",
-    directionsService,
-    directionsRenderer,
-  );
+  // Change the background color.
+  const pinBackground = new PinElement({
+    background: "#FBBC04",
+  });
+  const markerViewBackground = new AdvancedMarkerElement({
+    map,
+    position: { lat: 37.419, lng: -122.01 },
+    content: pinBackground.element,
+  });
+
+  // Change the border color.
+  const pinBorder = new PinElement({
+    borderColor: "#137333",
+  });
+  const markerViewBorder = new AdvancedMarkerElement({
+    map,
+    position: { lat: 37.415, lng: -122.03 },
+    content: pinBorder.element,
+  });
+
+  // Change the glyph color.
+  const pinGlyph = new PinElement({
+    glyphColor: "white",
+  });
+  const markerViewGlyph = new AdvancedMarkerElement({
+    map,
+    position: { lat: 37.415, lng: -122.02 },
+    content: pinGlyph.element,
+  });
+
+  // Hide the glyph.
+  const pinNoGlyph = new PinElement({
+    glyph: "",
+  });
+  const markerViewNoGlyph = new AdvancedMarkerElement({
+    map,
+    position: { lat: 37.415, lng: -122.01 },
+    content: pinNoGlyph.element,
+  });
 }
 
-function displayRoute(
-  origin: string,
-  destination: string,
-  service: google.maps.DirectionsService,
-  display: google.maps.DirectionsRenderer,
-) {
-  service
-    .route({
-      origin: origin,
-      destination: destination,
-      waypoints: [
-        { location: "Adelaide, SA" },
-        { location: "Broken Hill, NSW" },
-      ],
-      travelMode: google.maps.TravelMode.DRIVING,
-      avoidTolls: true,
-    })
-    .then((result: google.maps.DirectionsResult) => {
-      display.setDirections(result);
-    })
-    .catch((e) => {
-      alert("Could not display directions due to: " + e);
-    });
-}
-
-function computeTotalDistance(result: google.maps.DirectionsResult) {
-  let total = 0;
-  const myroute = result.routes[0];
-
-  if (!myroute) {
-    return;
-  }
-
-  for (let i = 0; i < myroute.legs.length; i++) {
-    total += myroute.legs[i]!.distance!.value;
-  }
-
-  total = total / 1000;
-  (document.getElementById("total") as HTMLElement).innerHTML = total + " km";
-}
-
-declare global {
-  interface Window {
-    initMap: () => void;
-  }
-}
-window.initMap = initMap;
+initMap();
 export {};
