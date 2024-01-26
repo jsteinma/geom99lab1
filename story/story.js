@@ -28,10 +28,10 @@ async function initMap() {
       title: 'New Hamburg Apartment'
   });
 
-  const housetwo = document.createElement('div');
-    housetwo.innerHTML = '<i class="fa fa-house fa-lg"></i>';
+  //const housetwo = document.createElement('div');
+    //housetwo.innerHTML = '<i class="fa fa-house fa-lg"></i>';
   const dadthpin = new PinElement({
-      glyph: housetwo,
+      glyph: houseone,
       glyphColor: '#000000',
       background: '#3386FF',
       borderColor: '#0068FF',
