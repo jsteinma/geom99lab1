@@ -15,17 +15,17 @@ async function initMap() {
 
   const icon = document.createElement('div');
     icon.innerHTML = '<i class="fa fa-house fa-lg"></i>';
-  const faPin = new PinElement({
+  const dad = new PinElement({
       glyph: icon,
       glyphColor: '#000000',
       background: '#3386FF',
       borderColor: '#0068FF',
   });
   
-  const faMarker = new AdvancedMarkerElement({
+  const nhapt = new AdvancedMarkerElement({
       map,
       position: { lat: 45.421, lng: -83.05 },
-      content: faPin.element,
+      content: dad.element,
       title: 'A marker using a FontAwesome icon for the glyph.'
   });
 
