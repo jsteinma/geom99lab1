@@ -15,6 +15,7 @@ async function initMap() {
 
   const icon = document.createElement('div');
     icon.innerHTML = '<i class="fa fa-house fa-lg"></i>';
+  
   const dad = new PinElement({
       glyph: icon,
       glyphColor: '#000000',
@@ -28,6 +29,14 @@ async function initMap() {
       content: dad.element,
       title: 'A marker using a FontAwesome icon for the glyph.'
   });
+  
+  const camth = new AdvancedMarkerElement({
+      map,
+      position: { lat: 46.429, lng: -84.10 },
+      content: dad.element,
+      title: 'A marker using a FontAwesome icon for the glyph.'
+  });
+
 
   
   // Each PinElement is paired with a MarkerView to demonstrate setting each parameter.
