@@ -10,6 +10,7 @@ async function initMap() {
   const map = new Map(document.getElementById("map"), {
     center: { lat: 45.945, lng: -83.985 },
     zoom: 6,
+    mapTypeId: google.maps.MapTypeId.TERRAIN
     mapId: "4504f8b37365c3d0",
   });
 
