@@ -24,7 +24,7 @@ async function initMap() {
   });
   const dadaptmark = new AdvancedMarkerElement({
       map,
-      position: { lat: 46.421, lng: -84.05 },
+      position: { lat: 43.3731308123411, lng: -80.70833899320702 },
       content: dadaptpin.element,
       title: 'New Hamburg Apartment'
   });
@@ -40,7 +40,7 @@ async function initMap() {
   });
   const dadthmark = new AdvancedMarkerElement({
       map,
-      position: { lat: 46.425, lng: -84.06 },
+      position: { lat: 43.37983156662524, lng: -80.31598643220795 },
       content: dadthpin.element,
       title: 'Cambridge Townhouse'
   });
@@ -56,68 +56,12 @@ async function initMap() {
   });
   const dadhomark = new AdvancedMarkerElement({
       map,
-      position: { lat: 46.428, lng: -84.07 },
+      position: { lat: 43.3689365796812, lng: -80.31341177216763 },
       content: dadhopin.element,
       title: 'Cambridge House'
   });
   
-  // Each PinElement is paired with a MarkerView to demonstrate setting each parameter.
-  // Default marker with title text (no PinElement).
-  const markerViewWithText = new AdvancedMarkerElement({
-    map,
-    position: { lat: 45.419, lng: -83.03 },
-    title: "Title text for the marker at lat: 37.419, lng: -122.03",
-  });
-  
-  // Adjust the scale.
-  const pinScaled = new PinElement({
-    scale: 1.5,
-  });
-  const markerViewScaled = new AdvancedMarkerElement({
-    map,
-    position: { lat: 45.419, lng: -83.02 },
-    content: pinScaled.element,
-  });
-  
-  // Change the background color.
-  const pinBackground = new PinElement({
-    background: "#FBBC04",
-  });
-  const markerViewBackground = new AdvancedMarkerElement({
-    map,
-    position: { lat: 45.419, lng: -83.01 },
-    content: pinBackground.element,
-  });
-  
-  // Change the border color.
-  const pinBorder = new PinElement({
-    borderColor: "#137333",
-  });
-  const markerViewBorder = new AdvancedMarkerElement({
-    map,
-    position: { lat: 45.415, lng: -83.03 },
-    content: pinBorder.element,
-  });
-  
-  // Change the glyph color.
-  const pinGlyph = new PinElement({
-    glyphColor: "white",
-  });
-  const markerViewGlyph = new AdvancedMarkerElement({
-    map,
-    position: { lat: 45.415, lng: -83.02 },
-    content: pinGlyph.element,
-  });
-  
-  // Hide the glyph.
-  const pinNoGlyph = new PinElement({
-    glyph: "",
-  });
-  const markerViewNoGlyph = new AdvancedMarkerElement({
-    map,
-    position: { lat: 45.415, lng: -83.01 },
-    content: pinNoGlyph.element,
-  });
+
 }
 
 initMap();
