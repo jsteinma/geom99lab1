@@ -13,12 +13,10 @@ async function initMap() {
     mapId: "4504f8b37365c3d0",
   });
 
-    // A marker using a Font Awesome icon for the glyph.
-  const icon = document.createElement("div");
-  
-  icon.innerHTML = '<i class="fa fa-house"></i>';
- 
   //
+  // A marker using a Font Awesome icon for the glyph.
+  const icon = document.createElement("1");
+  icon.innerHTML = '<i class="fa fa-house"></i>';
   const faPin = new PinElement({
     glyph: icon,
     glyphColor: "#ff8300",
