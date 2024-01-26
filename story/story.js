@@ -16,22 +16,31 @@ async function initMap() {
   const house = document.createElement('div');
     house.innerHTML = '<i class="fa fa-house fa-lg"></i>';
   
-  const dad = new PinElement({
+  const dadaptpin = new PinElement({
       glyph: house,
       glyphColor: '#000000',
       background: '#3386FF',
       borderColor: '#0068FF',
   });
-  
-  const nhapt = new AdvancedMarkerElement({
+  const dadaptmark = new AdvancedMarkerElement({
       map,
       position: { lat: 46.421, lng: -84.05 },
-      position: { lat: 46.423, lng: -84.06 },
-      content: dad.element,
+      content: dadaptpin.element,
       title: 'New Hamburg Apartment'
   });
 
-
+  const dadthpin = new PinElement({
+      glyph: house,
+      glyphColor: '#000000',
+      background: '#3386FF',
+      borderColor: '#0068FF',
+  });
+  const dadthmark = new AdvancedMarkerElement({
+      map,
+      position: { lat: 46.425, lng: -84.06 },
+      content: dadthpin.element,
+      title: 'Cambridge Townhouse'
+  });
 
   
   
