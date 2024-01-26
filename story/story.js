@@ -13,11 +13,11 @@ async function initMap() {
     mapId: "4504f8b37365c3d0",
   });
 
-  const icon = document.createElement('div');
-    icon.innerHTML = '<i class="fa fa-house fa-lg"></i>';
+  const house = document.createElement('div');
+    house.innerHTML = '<i class="fa fa-house fa-lg"></i>';
   
   const dad = new PinElement({
-      glyph: icon,
+      glyph: house,
       glyphColor: '#000000',
       background: '#3386FF',
       borderColor: '#0068FF',
