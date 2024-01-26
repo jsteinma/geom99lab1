@@ -1,3 +1,5 @@
+// base template for markers used from https://developers.google.com/maps/documentation/javascript/advanced-markers/graphic-markers#javascript_4
+
 const parser = new DOMParser();
 
 async function initMap() {
@@ -10,6 +12,7 @@ async function initMap() {
   const map = new Map(document.getElementById("map"), {
     center: { lat: 45.945, lng: -83.985 },
     zoom: 6,
+    //mapTypeId format learned from: https://subscription.packtpub.com/book/programming/9781849698825/1/ch01lvl1sec13/changing-base-maps
     mapTypeId: google.maps.MapTypeId.SATELLITE,
     mapId: "4504f8b37365c3d0",
   });
