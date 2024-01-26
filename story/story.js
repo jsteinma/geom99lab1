@@ -24,7 +24,7 @@ async function initMap() {
   
   const nhapt = new AdvancedMarkerElement({
       map,
-      position: { lat: 45.421, lng: -83.05 },
+      position: { lat: 46.421, lng: -84.05 },
       content: dad.element,
       title: 'A marker using a FontAwesome icon for the glyph.'
   });
