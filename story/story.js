@@ -13,11 +13,10 @@ async function initMap() {
     mapId: "4504f8b37365c3d0",
   });
 
-  const house = document.createElement('div');
-    house.innerHTML = '<i class="fa fa-house fa-lg"></i>';
-  
+  const houseone = document.createElement('div');
+    houseone.innerHTML = '<i class="fa fa-house fa-lg"></i>';
   const dadaptpin = new PinElement({
-      glyph: house,
+      glyph: houseone,
       glyphColor: '#000000',
       background: '#3386FF',
       borderColor: '#0068FF',
@@ -29,8 +28,10 @@ async function initMap() {
       title: 'New Hamburg Apartment'
   });
 
+  const housetwo = document.createElement('div');
+    housetwo.innerHTML = '<i class="fa fa-house fa-lg"></i>';
   const dadthpin = new PinElement({
-      glyph: house,
+      glyph: housetwo,
       glyphColor: '#000000',
       background: '#3386FF',
       borderColor: '#0068FF',
