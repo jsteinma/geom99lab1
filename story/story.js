@@ -17,11 +17,12 @@ async function initMap() {
   // A marker using a Font Awesome icon for the glyph.
   const icon = document.createElement("div");
   icon.innerHTML = '<i class="fa fa-house"></i>';
+  
   const faPin = new PinElement({
     glyph: icon,
-    glyphColor: "#ff8300",
-    background: "#FFD514",
-    borderColor: "#ff8300",
+    glyphColor: black,
+    background: "#3386FF",
+    borderColor: "#0068ff",
   });
   const faMarker = new AdvancedMarkerElement({
     map,
