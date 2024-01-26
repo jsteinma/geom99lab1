@@ -13,10 +13,11 @@ async function initMap() {
     mapId: "4504f8b37365c3d0",
   });
 
-  const houseone = document.createElement('div', 'div');
-    houseone.innerHTML = '<i class="fa fa-house fa-lg"></i>';
+//house 1 dad apt
+  const house1 = document.createElement('div');
+    house1.innerHTML = '<i class="fa fa-house fa-lg"></i>';
   const dadaptpin = new PinElement({
-      glyph: houseone,
+      glyph: house1,
       glyphColor: '#000000',
       background: '#3386FF',
       borderColor: '#0068FF',
@@ -28,10 +29,11 @@ async function initMap() {
       title: 'New Hamburg Apartment'
   });
 
-  //const housetwo = document.createElement('div');
-    //housetwo.innerHTML = '<i class="fa fa-house fa-lg"></i>';
+//house 2 dad th
+  const house2 = document.createElement('div');
+    house2.innerHTML = '<i class="fa fa-house fa-lg"></i>';
   const dadthpin = new PinElement({
-      glyph: houseone,
+      glyph: house2,
       glyphColor: '#000000',
       background: '#3386FF',
       borderColor: '#0068FF',
@@ -43,7 +45,21 @@ async function initMap() {
       title: 'Cambridge Townhouse'
   });
 
-  
+//house 3 dad house
+  const house3 = document.createElement('div');
+    house3.innerHTML = '<i class="fa fa-house fa-lg"></i>';
+  const dadhopin = new PinElement({
+      glyph: house3,
+      glyphColor: '#000000',
+      background: '#3386FF',
+      borderColor: '#0068FF',
+  });
+  const dadhomark = new AdvancedMarkerElement({
+      map,
+      position: { lat: 46.428, lng: -84.07 },
+      content: dadhopin.element,
+      title: 'Cambridge House'
+  });
   
   // Each PinElement is paired with a MarkerView to demonstrate setting each parameter.
   // Default marker with title text (no PinElement).
