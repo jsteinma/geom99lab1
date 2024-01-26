@@ -19,7 +19,7 @@ async function initMap() {
   const dadaptpin = new PinElement({
       glyph: house1,
       glyphColor: '#000000',
-      background: '#3386FF',
+      background: '#C4E4FE',
       borderColor: '#0068FF',
   });
   const dadaptmark = new AdvancedMarkerElement({
@@ -35,7 +35,7 @@ async function initMap() {
   const dadthpin = new PinElement({
       glyph: house2,
       glyphColor: '#000000',
-      background: '#3386FF',
+      background: '#8BC8FC',
       borderColor: '#0068FF',
   });
   const dadthmark = new AdvancedMarkerElement({
