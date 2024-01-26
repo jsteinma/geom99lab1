@@ -27,17 +27,19 @@ async function initMap() {
       map,
       position: { lat: 46.421, lng: -84.05 },
       content: dad.element,
-      title: 'A marker using a FontAwesome icon for the glyph.'
+      title: 'New Hamburg Apartment'
   });
   
   const camth = new AdvancedMarkerElement({
       map,
-      position: { lat: 46.429, lng: -84.10 },
+      position: { lat: 46.423, lng: -84.08 },
       content: dad.element,
-      title: 'A marker using a FontAwesome icon for the glyph.'
+      title: 'Cambridge Townhouse'
   });
 
 
+
+  
   
   // Each PinElement is paired with a MarkerView to demonstrate setting each parameter.
   // Default marker with title text (no PinElement).
