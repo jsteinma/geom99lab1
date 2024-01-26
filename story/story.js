@@ -15,8 +15,8 @@ async function initMap() {
 
   //
   // A marker using a Font Awesome icon for the glyph.
-  const icon = document.createElement("div");
-  icon.innerHTML = '<i class="fa fa-house"></i>';
+  const houseone = document.createElement("div");
+  houseone.innerHTML = '<i class="fa fa-house"></i>';
   const faPin = new PinElement({
     glyph: icon,
     glyphColor: "#ff8300",
