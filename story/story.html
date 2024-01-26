@@ -26,9 +26,40 @@
       }
 
       #both {
-        margin-width: 100%;
-        background-color: lightpurple; /* For browsers that do not support gradients */
-        background-image: linear-gradient(to right, #C6B4FF , #A78BFF);
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        background-color: lightpurple;
+        /* gradient colour structure from https://w3schools.com/css/tryit.asp?filename=trycss3_gradient-linear_ltr */
+        background-image: linear-gradient(to right, #C6B4FF , #A78BFF); 
+      }
+
+      #dad {
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        background-color: #74ADFF;
+        background-image: linear-gradient(to right, #9AC3FF , #3386FF); 
+      }
+
+      #mom {
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        background-color: #FF9AD6;
+        background-image: linear-gradient(to right, #FFBEE5 , #FF86CF); 
+      }
+
+      #self {
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        background-color: #FFD349;
+        background-image: linear-gradient(to right, #FFEDB4 , #FFA200); 
+      }
+
+      #legtit {
+        margin-bottom: 8px;
       }
       
       #map {
@@ -61,9 +92,11 @@
     <div id="map"></div>
     <p class="info">A useful tip: turn on labels by clicking the "Labels" box in the dropdown menu under Satellite.</p>
     <div class="info">
-      <p>First Years to Recent Years Gradients</p>
+      <p id="legtit">First Years to Recent Years Gradients:</p>
       <p id="both">With Both Parents</p>
-
+      <p id="dad">With Dad</p>
+      <p id="mom">With Mom</p>
+      <p id="self">On Own</p>
 
     </div>
   </body>
