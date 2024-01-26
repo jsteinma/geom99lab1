@@ -14,12 +14,12 @@ async function initMap() {
   });
 
   const icon = document.createElement('div');
-    icon.innerHTML = '<i class="fa fa-pizza-slice fa-lg"></i>';
+    icon.innerHTML = '<i class="fa fa-house fa-lg"></i>';
   const faPin = new PinElement({
       glyph: icon,
-      glyphColor: '#ff8300',
-      background: '#FFD514',
-      borderColor: '#ff8300',
+      glyphColor: '#000000',
+      background: '#3386FF',
+      borderColor: '#0068FF',
   });
   
   const faMarker = new AdvancedMarkerElement({
