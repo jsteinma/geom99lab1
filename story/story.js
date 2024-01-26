@@ -78,7 +78,7 @@ async function initMap() {
       map,
       position: { lat: 43.44859031899011, lng: -80.51124452572624 },
       content: momkipin.element,
-      title: 'Cambridge House',
+      title: 'Kitchener House',
   });
   
 //house 2 mom farm
@@ -94,7 +94,7 @@ async function initMap() {
       map,
       position: { lat: 43.39363559624764, lng: -80.63259472255798 },
       content: momfapin.element,
-      title: 'Cambridge House',
+      title: 'Farm House',
   });
   
 //house 3 mom baden
@@ -110,7 +110,7 @@ async function initMap() {
       map,
       position: { lat: 43.40253811823013, lng: -80.67594929326613 },
       content: mombapin.element,
-      title: 'Cambridge House',
+      title: 'Baden White House',
   });
   
 //house 4 mom nhhouse
@@ -126,7 +126,7 @@ async function initMap() {
       map,
       position: { lat: 43.37463735969032, lng: -80.70833516998648 },
       content: momhopin.element,
-      title: 'Cambridge House',
+      title: 'New Hamburg House',
   });
   
 //house 5 mom apt
@@ -142,7 +142,7 @@ async function initMap() {
       map,
       position: { lat: 43.37797224539896, lng: -80.70935557291084 },
       content: momaptpin.element,
-      title: 'Cambridge House',
+      title: 'New Hamburg Apt',
   });
   
 //house 1 both exeter
@@ -158,7 +158,7 @@ async function initMap() {
       map,
       position: { lat: 43.34724767951117, lng: -81.48057391951164 },
       content: bothexpin.element,
-      title: 'Cambridge House',
+      title: 'Exeter House',
   });
   
 //house 2 both baden
@@ -174,7 +174,7 @@ async function initMap() {
       map,
       position: { lat: 43.40004189368527, lng: -80.66076127931625 },
       content: bothbapin.element,
-      title: 'Cambridge House',
+      title: 'Baden House',
   });
   
 //house 1 my barrieres
@@ -190,7 +190,7 @@ async function initMap() {
       map,
       position: { lat: 44.41301197637368, lng: -79.66579502002776 },
       content: mybarespin.element,
-      title: 'Cambridge House',
+      title: 'Barrie Residence',
   });
   
 //house 2 my barriegreen
@@ -206,7 +206,7 @@ async function initMap() {
       map,
       position: { lat: 44.4115991090519, lng: -79.67583273132199 },
       content: mybagrpin.element,
-      title: 'Cambridge House',
+      title: 'Barrie Green',
   });
   
 //house 3 my lindsayres
@@ -222,7 +222,7 @@ async function initMap() {
       map,
       position: { lat: 44.33929082808649, lng: -78.74441382397843 },
       content: mylinrespin.element,
-      title: 'Cambridge House',
+      title: 'Lindsay Residence',
   });
   
 //house 4 my lindsayth
@@ -238,7 +238,7 @@ async function initMap() {
       map,
       position: { lat: 44.34622235383005, lng: -78.7309406764728 },
       content: mylinthpin.element,
-      title: 'Cambridge House',
+      title: 'Lindsay Townhouse',
   });
   
 //house 5 my lindsaysketch
@@ -254,7 +254,7 @@ async function initMap() {
       map,
       position: { lat: 44.34798023228108, lng: -78.74296234435508 },
       content: myliskpin.element,
-      title: 'Cambridge House',
+      title: 'Lindsay Sketch House',
   });
 
   //house 6 my thunderbay
@@ -270,7 +270,7 @@ async function initMap() {
       map,
       position: { lat: 48.44572961499403, lng: -89.24773803201103 },
       content: mytbaypin.element,
-      title: 'Cambridge House',
+      title: 'Thunder Bay Apt',
   });
 
   //house 7 my cavan
@@ -286,7 +286,7 @@ async function initMap() {
       map,
       position: { lat: 44.24480633637904, lng: -78.50567666080181 },
       content: mycavpin.element,
-      title: 'Cambridge House',
+      title: 'Cavan House',
   });
 
   //house 8 my current
@@ -302,7 +302,7 @@ async function initMap() {
       map,
       position: { lat: 44.35639928229577, lng: -78.74048141671955 },
       content: mycampin.element,
-      title: 'Cambridge House',
+      title: 'Lindsay Big House',
   });
 }
 
