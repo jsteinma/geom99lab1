@@ -24,6 +24,12 @@
         font-style: italic;
         text-align: center;
       }
+
+      #both {
+        margin-width: 100%;
+        background-color: lightpurple; /* For browsers that do not support gradients */
+        background-image: linear-gradient(to right, #000000 , #999999);
+      }
       
       #map {
         height: 70%;
@@ -52,10 +58,13 @@
   <body>
     <h1>"Oh The Places You'll Go..."</h1>
     <h2>(...Or Live...)</h2>
-    
     <div id="map"></div>
-    
     <p class="info">A useful tip: turn on labels by clicking the "Labels" box in the dropdown menu under Satellite.</p>
+    <div class="info">
+      <p>First Years to Recent Years Gradients</p>
+      <p id="both">With Both Parents</p>
 
+
+    </div>
   </body>
 </html>
