@@ -12,6 +12,26 @@ async function initMap() {
     zoom: 7,
     mapId: "4504f8b37365c3d0",
   });
+
+    // A marker using a Font Awesome icon for the glyph.
+  const icon = document.createElement("div");
+  
+  icon.innerHTML = '<i class="fa fa-pizza-slice fa-lg"></i>';
+ 
+  //
+  const faPin = new PinElement({
+    glyph: icon,
+    glyphColor: "#ff8300",
+    background: "#FFD514",
+    borderColor: "#ff8300",
+  });
+  const faMarker = new AdvancedMarkerElement({
+    map,
+    position: { lat: 45.422, lng: -83.05 },
+    content: faPin.element,
+    title: "A marker using a FontAwesome icon for the glyph.",
+  });
+  //
   
   // Each PinElement is paired with a MarkerView to demonstrate setting each parameter.
   // Default marker with title text (no PinElement).
