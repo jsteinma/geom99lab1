@@ -13,7 +13,7 @@ async function initMap() {
     mapId: "4504f8b37365c3d0",
   });
 
-  const houseone = document.createElement('div');
+  const houseone = document.createElement('div', 'div');
     houseone.innerHTML = '<i class="fa fa-house fa-lg"></i>';
   const dadaptpin = new PinElement({
       glyph: houseone,
