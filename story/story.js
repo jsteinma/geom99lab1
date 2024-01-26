@@ -26,15 +26,9 @@ async function initMap() {
   const nhapt = new AdvancedMarkerElement({
       map,
       position: { lat: 46.421, lng: -84.05 },
+      position: { lat: 46.423, lng: -84.06 },
       content: dad.element,
       title: 'New Hamburg Apartment'
-  });
-  
-  const camth = new AdvancedMarkerElement({
-      map,
-      position: { lat: 46.423, lng: -84.08 },
-      content: dad.element,
-      title: 'Cambridge Townhouse'
   });
 
 
